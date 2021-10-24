@@ -1,12 +1,22 @@
 import streamlit as st
 import pickle
+import numpy as np
+import pandas as pd
+from datetime import date
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn import metrics
+
 
 #Loading the pickle file
-pickle_in = open("regression.pkl", "rb")
-regressor = pickle.load(pickle_in)
+model = open("LinearRegressionModel.sav", "rb")
+regressor = pickle.load(model)
 
 
 st.title("Welcome!")
+
 
 #Basic Information
 basicinformation = st.container()
@@ -46,7 +56,7 @@ personal_info.write("Personal Information")
 col1,col2,col3 = personal_info.columns(3)
 internet = col1.selectbox('Internet access at home',('yes','no'))
 health = col2.number_input('Health Status',min_value=1, max_value=5, value=3)
-romantic = col3.selectbox('In a romantic Relationship',('yes','no'))
+romantic = col3.selectbox('In a Romantic Relationship',('yes','no'))
 
 col1,col2,col3,col4 = personal_info.columns(4)
 freetime = col1.number_input('Free time after School',min_value=1, max_value=5, value=3)
@@ -84,10 +94,183 @@ g1 = col1.number_input('First period Grade',min_value=0, max_value=20, value=3)
 g2 = col2.number_input('Second period Grade',min_value=0, max_value=20, value=3)
 
 
-def fun():
-    st.write('age'+age)
-    return
-but = st.button("Click")
+but = st.button("Predict Grade3")
 
 if but:
-    print(age)
+    inp = []
+    if school == 'Gabriel Pereira':
+        inp.append(0)
+    else:
+        inp.append(1)
+    
+    if sex == 'Male':
+        inp.append(1)
+    else:
+        inp.append(0)
+
+    inp.append(age)
+
+    if address == 'Urban':
+        inp.append(0)
+    else:
+        inp.append(1)
+    
+    if famsize == 'Greater than 3':
+        inp.append(1)
+    else:
+        inp.append(0)
+
+    if  parentstatus == 'Living Together':
+        inp.append(1)
+    else:
+        inp.append(0)
+
+    if medu == 'None':
+        inp.append(0)
+    elif medu == 'Primary Education':
+        inp.append(1)
+    elif medu == '5th to 9th Grade':
+        inp.append(2)
+    elif medu == 'Seconday Education':
+        inp.append(3)
+    else:
+        inp.append(4)
+    
+    if fedu == 'None':
+        inp.append(0)
+    elif fedu == 'Primary Education':
+        inp.append(1)
+    elif fedu == '5th to 9th Grade':
+        inp.append(2)
+    elif fedu == 'Seconday Education':
+        inp.append(3)
+    else:
+        inp.append(4)
+
+    if mjob == 'Teacher':
+        inp.append(1)
+    elif mjob == 'At Home':
+        inp.append(0)
+    elif mjob == 'Healthcare':
+        inp.append(2)
+    elif mjob == 'Civil Services':
+        inp.append(3)
+    else:
+        inp.append(4)
+
+    if fjob == 'Teacher':
+        inp.append(1)
+    elif fjob == 'At Home':
+        inp.append(0)
+    elif fjob == 'Healthcare':
+        inp.append(2)
+    elif fjob == 'Civil Services':
+        inp.append(3)
+    else:
+        inp.append(4)
+
+    if reason == 'Close to Home':
+        inp.append(0)
+    elif reason == 'Reputation':
+        inp.append(1)  
+    elif reason == 'Course Preference':
+        inp.append(2)
+    else:
+        inp.append(3)
+
+    if guardian == 'Mother':
+        inp.append(0)
+    elif guardian == 'Father':
+        inp.append(1)
+    else:
+        inp.append(2)
+
+    if traveltime == 'Less than 15 minutes':
+        inp.append(1)
+    elif traveltime == '15 to 30 minutes':
+        inp.append(2)
+    elif traveltime == '30 min to 1hr':
+        inp.append(3)
+    else:
+        inp.append(4)
+    
+    if studytime == 'Less than 2 hours':
+        inp.append(1)
+    elif studytime == '2 to 5 hours':
+        inp.append(2)
+    elif studytime == '5 to 10 hours':
+        inp.append(3)
+    else:
+        inp.append(4)
+
+    if failuers == 0 or failuers == 1 or failuers == 2 or failuers == 3:
+        inp.append(failuers)
+    else:
+        inp.append(4) 
+
+    if schoolsupp == 'no':
+        inp.append(0)
+    else:
+        inp.append(1)
+
+    if familysupp == 'no':
+        inp.append(0)
+    else:
+        inp.append(1)
+
+    if paidclasses == 'no':
+        inp.append(0)
+    else:
+        inp.append(1)
+
+    if extracurract == 'no':
+        inp.append(0)
+    else:
+        inp.append(1)
+
+    if nursery == 'no':
+        inp.append(0)
+    else:
+        inp.append(1) 
+
+    if higheredu == 'no':
+        inp.append(0)
+    else:
+        inp.append(1)
+    
+    if internet == 'no':
+        inp.append(0)
+    else:
+        inp.append(1)
+
+    if romantic == 'no':
+        inp.append(0)
+    else:
+        inp.append(1)
+    
+    inp.append(famrel)
+    inp.append(freetime)
+    inp.append(goout)
+    inp.append(workalc)
+    inp.append(weekalc)
+    inp.append(health)
+    inp.append(absence)
+    inp.append(g1)
+    inp.append(g2)
+
+    
+    
+    result = regressor.predict(np.array(inp).reshape(1,-1))
+    
+    
+    grade3 = 0
+    if result[0] > 20 :
+        grade3 = 20
+    else:
+        grade3 = round(result[0])
+
+    
+    col1,col2 = st.columns(2)
+
+    col1.write("Predicted Grade3:")
+    col2.write(grade3)
