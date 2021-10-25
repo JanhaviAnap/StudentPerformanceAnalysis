@@ -14,6 +14,18 @@ To run the project:
    ```
    streamlit run app.py
    ```
+   
+   
+**Data FLow Diagram**
+Level 0 DFD:
+![image](https://user-images.githubusercontent.com/63518181/138637835-3a703c75-9096-4860-b374-00ff57b68145.png)
+ 
+Level 1 DFD:
+1. Model Generation
+![image](https://user-images.githubusercontent.com/63518181/138637850-bb068119-6222-4a27-83ea-9b3e88f20b82.png)
+ 
+2. Grade Prediction System
+ ![image](https://user-images.githubusercontent.com/63518181/138637877-c8b13439-7591-4f74-ad86-c5f23fb4f5f2.png)
 
 
 **Gantt Chart:**
