@@ -6,4 +6,6 @@
 
 **Draft Report: [Link](https://docs.google.com/document/d/1dcfqB4wSCVZQP9nqa0tKlM3afpuTEsSvV7Zh8Hm9f_A/edit)**
 
-**Gantt Chart: [Link](https://prod.teamgantt.com/gantt/schedule/?ids=2847318#&ids=2847318&user=&custom=&company=&hide_completed=false&date_filter=&color_filter=)**
+**Gantt Chart:**
+![image](https://user-images.githubusercontent.com/63518181/138635717-45193bc2-f6e5-4080-b498-7a9dd33ede7e.png)
+
