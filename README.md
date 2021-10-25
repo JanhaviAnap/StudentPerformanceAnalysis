@@ -22,7 +22,7 @@ Level 0 DFD: <br/>
  
 Level 1 DFD:
 1. Model Generation<br/>
-![image](https://user-images.githubusercontent.com/63518181/138637850-bb068119-6222-4a27-83ea-9b3e88f20b82.png)
+![image](https://user-images.githubusercontent.com/63518181/138640053-df9c4bad-712c-4875-b005-6b0c93bf77e8.png)
  
 2. Grade Prediction System<br/>
 ![image](https://user-images.githubusercontent.com/63518181/138637877-c8b13439-7591-4f74-ad86-c5f23fb4f5f2.png)
