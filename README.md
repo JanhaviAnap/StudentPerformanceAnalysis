@@ -13,9 +13,9 @@
 To run the project:
 1. Open terminal in StudentPerformanceAnalysis Folder
 2. Install the necessary packages by using following command in the terminal
-```
-pip install -r requirements.txt
-```
+   ```
+   pip install -r requirements.txt
+   ```
 2. To host the project in the browser enter the following command
 ```
 streamlit run app.py
