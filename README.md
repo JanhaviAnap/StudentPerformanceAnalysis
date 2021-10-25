@@ -4,12 +4,6 @@
 
 **Dataset: [Student Performance Data Set](https://archive.ics.uci.edu/ml/datasets/Studen)**
 
-**Draft Report: [Link](https://docs.google.com/document/d/1dcfqB4wSCVZQP9nqa0tKlM3afpuTEsSvV7Zh8Hm9f_A/edit)**
-
-**Gantt Chart:**
-![image](https://user-images.githubusercontent.com/63518181/138635717-45193bc2-f6e5-4080-b498-7a9dd33ede7e.png)
-
-
 To run the project:
 1. Open terminal in StudentPerformanceAnalysis Folder
 2. Install the necessary packages by using following command in the terminal
@@ -20,3 +14,13 @@ To run the project:
    ```
    streamlit run app.py
    ```
+
+
+**Gantt Chart:**
+![image](https://user-images.githubusercontent.com/63518181/138635717-45193bc2-f6e5-4080-b498-7a9dd33ede7e.png)
+
+**Draft Report: [Link](https://docs.google.com/document/d/1dcfqB4wSCVZQP9nqa0tKlM3afpuTEsSvV7Zh8Hm9f_A/edit)**
+
+
+
+
