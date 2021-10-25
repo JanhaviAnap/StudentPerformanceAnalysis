@@ -16,7 +16,7 @@ To run the project:
    ```
    
    
-**Data FLow Diagram**
+**Data FLow Diagram**<br/>
 Level 0 DFD: <br/>
 ![image](https://user-images.githubusercontent.com/63518181/138637835-3a703c75-9096-4860-b374-00ff57b68145.png)
  
