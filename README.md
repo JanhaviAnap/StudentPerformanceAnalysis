@@ -17,6 +17,6 @@ To run the project:
    pip install -r requirements.txt
    ```
 2. To host the project in the browser enter the following command
-```
-streamlit run app.py
-```
+   ```
+   streamlit run app.py
+   ```
