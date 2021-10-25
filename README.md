@@ -25,7 +25,7 @@ Level 1 DFD:
 ![image](https://user-images.githubusercontent.com/63518181/138640783-bd4fbbcf-c3d2-4d8b-9f5c-3b6df7556fd8.png)
  
 2. Grade Prediction System<br/>
-![image](https://user-images.githubusercontent.com/63518181/138640300-60dbee5b-886d-46cf-9f6f-7b8cea0fd914.png)
+![image](https://user-images.githubusercontent.com/63518181/138641413-f1adb8b0-ce95-4f91-80a5-3ee02c8f787f.png)
 
 
 **Gantt Chart:**
