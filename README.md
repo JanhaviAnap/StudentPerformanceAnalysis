@@ -5,12 +5,6 @@
 **Dataset: [Student Performance Data Set](https://archive-beta.ics.uci.edu/ml/datasets/student+performance)**
 
 
-**PPT: [PPT](https://docs.google.com/presentation/d/1Fs0NI1YzfsILR0xKJNelxuyIILKWzlgjik6Nv8NkFfg/edit?usp=sharing)**
-
-
-**REPORT: [Report](https://docs.google.com/document/d/1r9BrkZeZx2t5edw2hjy5vYbjZHLOUdNrzrhsXE8F76c/edit?usp=sharing)**
-
-
 To run the project:
 1. Open terminal in StudentPerformanceAnalysis Folder
 2. Install the necessary packages by using following command in the terminal
@@ -38,7 +32,12 @@ Level 1 DFD:
 **Gantt Chart:**
 ![image](https://user-images.githubusercontent.com/63518181/138635717-45193bc2-f6e5-4080-b498-7a9dd33ede7e.png)
 
-**Draft Report: [Link](https://docs.google.com/document/d/1dcfqB4wSCVZQP9nqa0tKlM3afpuTEsSvV7Zh8Hm9f_A/edit)**
+
+**PPT: [PPT](https://docs.google.com/presentation/d/1Fs0NI1YzfsILR0xKJNelxuyIILKWzlgjik6Nv8NkFfg/edit?usp=sharing)**
+
+
+**REPORT: [Report](https://docs.google.com/document/d/1r9BrkZeZx2t5edw2hjy5vYbjZHLOUdNrzrhsXE8F76c/edit?usp=sharing)**
+
 
 
 
