@@ -4,6 +4,13 @@
 
 **Dataset: [Student Performance Data Set](https://archive-beta.ics.uci.edu/ml/datasets/student+performance)**
 
+
+**Dataset: [PPT](https://docs.google.com/presentation/d/1Fs0NI1YzfsILR0xKJNelxuyIILKWzlgjik6Nv8NkFfg/edit?usp=sharing)**
+
+
+**Dataset: [Report](https://docs.google.com/document/d/1r9BrkZeZx2t5edw2hjy5vYbjZHLOUdNrzrhsXE8F76c/edit?usp=sharing)**
+
+
 To run the project:
 1. Open terminal in StudentPerformanceAnalysis Folder
 2. Install the necessary packages by using following command in the terminal
