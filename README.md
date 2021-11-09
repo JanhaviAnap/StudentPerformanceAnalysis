@@ -2,7 +2,7 @@
 
 [![CodeQL](https://github.com/JanhaviAnap/StudentPerformanceAnalysis/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/JanhaviAnap/StudentPerformanceAnalysis/actions/workflows/codeql-analysis.yml)
 
-**Dataset: [Student Performance Data Set](https://archive.ics.uci.edu/ml/datasets/Studen)**
+**Dataset: [Student Performance Data Set](https://archive-beta.ics.uci.edu/ml/datasets/student+performance)**
 
 To run the project:
 1. Open terminal in StudentPerformanceAnalysis Folder
